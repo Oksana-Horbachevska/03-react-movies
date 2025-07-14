@@ -25,9 +25,6 @@ export default function App() {
         toast("No movies found for your request.");
       }
       setMovieList(data.results);
-    } catch (err) {
-      setError(true);
-      ErrorMessage();
     } finally {
       setLoading(false);
     }
@@ -35,7 +32,7 @@ export default function App() {
 
   const handleSelectMovie = (movie: Movie) => {
     setSelectedMovie(movie);
-    console.log("Вибрано фільм:", movie);
+    // console.log("Вибрано фільм:", movie);
   };
 
   return (

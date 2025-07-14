@@ -38,8 +38,8 @@ export default function SearchBar({ onSubmit }: SearchBarProps) {
           <button className={styles.button} type="submit">
             Search
           </button>
-          <Toaster />
         </form>
+        <Toaster />
       </div>
     </header>
   );
